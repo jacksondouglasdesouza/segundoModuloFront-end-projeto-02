@@ -1,0 +1,389 @@
+html{
+  width: 100%;
+  background-color: #fffef7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fira Sans', sans-serif;
+  margin: 0;
+}
+
+p, a, li, span, input, textarea, select, button {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+body{
+  margin: 0;
+  background-color: #fffef7;
+  color: #10162f;
+  display: grid;
+  gap: 30px;
+  justify-items: center;
+  margin-top: 30px;;
+}
+
+img{
+  max-width: 100%;
+  display: block;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header{
+  display: grid;
+  gap: 30px;
+  justify-items: center;
+}
+
+.menu{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-items: center;
+}
+
+
+/* nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+} */
+
+.menu a{
+  display: block;
+  color: #10162f;
+  font-size: 1rem;
+  font-weight: regular;
+  padding: 0.5rem 3rem;
+  border-radius: 1px;
+  border: 1px solid #f7e02d;
+}
+
+ul li.saleoff a{ /* SALE OFF TAG - NAV*/
+  display: block;
+  color: #f7e02d;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem 3rem;
+  border-radius: 1px;
+  border: 1px solid #f7e02d;
+  background-color: #10162f;
+  text-transform: uppercase;
+  border: 1px solid #10162f;
+}
+
+nav ul li a:hover{
+  background-color: #f7e02d;
+  color: #10162f;
+  border: 1px solid #10162f;
+  transition: 0.5s;
+}
+
+/* nav ul li.saleoff a:hover{
+  background-color: #fffef7;
+  color: #10162f;
+}  */
+
+nav ul li.saleoff a:active{
+  background-color: #232323;;
+  color: #fff;
+}
+
+nav ul li a:active{
+  background-color: #232323;
+  color: #fff;
+  border: none;
+}
+
+/* nav ul li a:visited{ /*****  Não CUrti o efeito
+  background-color: #232323;
+  color: #10162f;
+  border: none;
+} */
+
+
+.conteudo{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1100px;
+}
+
+.introducao{
+  max-height: 700px;
+  display: grid;
+  gap: 10px;
+  position: relative;
+  text-align: right;
+  align-content: center;
+  justify-items: end;
+  background-color: #f7e02d;
+  border: #10162f 1px solid;
+  padding: 40px;
+  margin: 0;
+}
+
+/* FOTO GAROTINHA */
+.garotinha{
+  display: block;
+  width: 100%;
+  height: 100%;
+
+}
+
+/* div.menina{
+  width: 550px;
+  height: 700px;
+  background-image: url("./imgs/fotoBody/foto-da-garota-feliz.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  display: flex;
+} */
+
+.introducao h1{
+  font-size: 2.5rem;
+  letter-spacing: -6%;
+}
+
+.introducao p{
+  font-size: 1.5rem;
+  letter-spacing: 8%;
+  line-height: 1.5;
+}
+
+button.botao{
+  background-color: #fffae5;
+  color: #10162f;
+  font-size: 1rem;
+  font-weight: regular;
+  padding: 1rem 2rem;
+  border-radius: 1px;
+  border: 1px solid #10162f;
+  text-transform: uppercase;
+  transition: 0.6s;
+}
+
+button.botao:hover{
+  background-color: #10162f;
+  color: #f7e02d;
+  font-size: 1rem;
+  font-weight: regular;
+  padding: 1rem 2rem;
+  border-radius: 1px;
+  border: 1px solid #10162f;
+  text-transform: uppercase;
+}
+
+button.botao a{
+  color: #10162f;
+}
+
+button.botao a:hover{
+  color: #f7e02d;
+  background-color: #10162f;
+}
+
+
+article.baixo{
+  background-color: #f9f5d5;
+}
+
+.vantagem{
+padding: 30px;
+}
+
+figure.ilustracao{
+  text-align: center;
+  padding: 5px;
+  align-self: center;
+  background-color: #f9f5d5;
+  position: relative;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+
+figure.ilustracao img.estrada{
+  align-items: end;
+  position: absolute;
+  top: 249px;
+  left: 20px;
+}
+
+.produtos{
+  padding: 30px;
+  width: 600px;
+  
+}
+
+/* .branco{
+  background-color: #fffae5;
+} */
+
+.produto{
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  text-align: left;
+  align-content: left;
+}
+
+div.produto{
+  border-left: 5px solid #10162f;
+  margin: 5px 0;
+}
+
+.produto img.fotoProduto{
+  float: left;
+  align-self: center;
+}
+
+.produto button{
+  background-color: #fffae5;
+  color: #10162f;
+  font-size: 0.5rem;
+  padding: 5px 40px;
+  border-radius: 1px;
+  border: 1px solid #10162f;
+  display: inline-block;
+  align-self: center;
+  align-content: center;
+  justify-self: center;
+  margin-top: 10px;
+}
+
+.produto button:hover{
+  /* background-color: #10162f; */
+  color: #10162f;
+  font-size: 0.5rem;
+  font-weight: bold ;
+  padding: 5px 40px;
+  border-radius: 1px;
+  border: 2px solid #10162f;
+  display: inline-block;
+  align-self: center;
+  align-content: center;
+  justify-self: center;
+  margin-top: 10px;
+  transition: 0.6s;
+}
+
+.produto button a{
+  color: #10162f;
+  font-size: 00.625rem;
+  padding-left: 11px;
+  position: relative;
+}
+
+.produto button a:hover{
+  color: #10162f;
+  font-size: 00.625rem;
+  padding-left: 11px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+
+.produto button a img.cart{
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  left: -10px;
+}
+
+.produto.precoIcons{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+
+div .preco{
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin: 20px 0;
+}
+
+
+div.preco img.ic{
+  position: relative;
+  left: 120px;
+  justify-items: end;
+}
+
+div.produto h2{
+  font-size: 1.25rem;
+  letter-spacing: -3%;
+  padding: auto;
+}
+
+div.produto p{
+  font-size: 0.625rem;
+  letter-spacing: 3%;
+  line-height: 1.5;
+  padding: auto;
+}
+
+/* .produto:nth-child(odd){
+  background-color: #fffae56e;
+  border-radius: 1px;
+  width: 100%;
+} */
+
+.produto:hover{
+  background-color: #b4ac8c54;
+  border-left: #10162f 10px solid;
+  border-radius: 2px;
+  width: 103%;
+}
+
+footer{
+  background-color: #10162f;
+  color: #fff;
+  padding: 30px 0;
+  margin: 0 20px;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+footer p, h3{
+  margin: 10 0;
+}
+
+footer h3{
+  letter-spacing: 3%;
+}
+
+footer p{
+  font-size: 0.9rem;
+  letter-spacing: 1%;
+  line-height: 190%;
+}
+
+footer span.iconFooter{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+footer a{
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: regular;
+}
