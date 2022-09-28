@@ -1,12 +1,15 @@
 # Projeto do curso de desenvolvimento de software, Tricycle - Módulo Front-end Grid Display flex - posicionamento e CSS interativo.
 
- - Este é meu segundo projeto do segundo módulo de desenvolvimento Front-end, abordando os temas, Grid - Display flex - posicionamento e CSS interativo. O Projeto foi baseado em uma empresa imaginária denominada Tricycle. Desenvolvi o protótipo, a logomarca e todo projeto UI utilizando a tecnologia Figma e utilizei as tecnologias HTML5 E CSS3 nativo para o desenvolvimento da página web. A página ainda é semi responsiva.
+ - Este é meu segundo projeto do segundo módulo de desenvolvimento Front-end, abordando os temas, Grid - Display flex - posicionamento e CSS interativo. O Projeto foi baseado em uma empresa imaginária denominada Tricycle. Desenvolvi o protótipo, a logomarca e todo projeto UI utilizando a tecnologia Figma e utilizei as tecnologias HTML5 E CSS3 nativo para o desenvolvimento da página web. A pagina ainda não é responsiva, então não se adaptará muito bem em celulares, mais em Desktop ela está funcionando muito show de bola.
 
 ### - Link do protótipo no Figma: https://bit.ly/3fpnEGD 
 
 ### - Link da gravação de tela no youtube: https://youtu.be/DIsEui2YQf8 
 
 ### - LInk do projeto no Github: https://bit.ly/3UMbXKu 
+
+### - link do projeto na web: https://bit.ly/3BR8wcK
+
 
 
 <img
