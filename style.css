@@ -79,7 +79,7 @@ ul li.saleoff a{ /* SALE OFF TAG - NAV*/
   border: 1px solid #f7e02d;
   background-color: #10162f;
   text-transform: uppercase;
-  border: 1px solid #10162f;
+  border: 1px solid #f7e02d;
 }
 
 nav ul li a:hover{
@@ -170,7 +170,8 @@ button.botao{
   border-radius: 1px;
   border: 1px solid #10162f;
   text-transform: uppercase;
-  transition: 0.6s;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 button.botao:hover{
