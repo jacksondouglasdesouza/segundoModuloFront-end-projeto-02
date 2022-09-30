@@ -8,7 +8,7 @@
 
 ### - LInk do projeto no Github: https://bit.ly/3UMbXKu 
 
-### - link do projeto na web: https://bit.ly/3BR8wcK
+### - link do projeto na web: https://bit.ly/3BR8wcK    [![Netlify Status](https://api.netlify.com/api/v1/badges/5f790a4e-b6c0-4e90-82af-24bf60c0e08c/deploy-status)](https://app.netlify.com/sites/ui-ix-projeto02-frontend/deploys)
 
 
 
