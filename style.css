@@ -23,10 +23,12 @@ body{
   margin-top: 30px;;
 }
 
+
 img{
   max-width: 100%;
   display: block;
 }
+
 
 a{
   text-decoration: none;
@@ -37,6 +39,7 @@ ul{
   padding: 0;
   list-style: none;
 }
+
 
 header{
   display: grid;
@@ -49,7 +52,16 @@ header{
   flex-wrap: wrap;
   gap: 10px;
   justify-items: center;
+  margin-left: 30px;
 }
+
+/* @media (min-width: 700px){
+  .menu{
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-left: 50px;
+  }
+} */
 
 
 /* nav ul{
@@ -68,6 +80,7 @@ header{
   border-radius: 1px;
   border: 1px solid #f7e02d;
 }
+
 
 ul li.saleoff a{ /* SALE OFF TAG - NAV*/
   display: block;
@@ -118,6 +131,13 @@ nav ul li a:active{
   max-width: 1100px;
 }
 
+@media(max-width: 700px){
+  .conteudo{
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+}
+
 .introducao{
   max-height: 700px;
   display: grid;
@@ -132,12 +152,32 @@ nav ul li a:active{
   margin: 0;
 }
 
+@media(max-width: 700px){
+  .introducao{
+    width: 82%;
+    height: auto;
+  }
+}
+
 /* FOTO GAROTINHA */
 .garotinha{
   display: block;
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
 
+@media(max-width: 700px){
+  .garotinha{
+    width: 100%;
+    height: auto;
+    mask-position: cover;
+  }
+}
+
+.gatinho{
+  display: block;
+  max-width: 100%;
+  height: 400px;
 }
 
 /* div.menina{
@@ -204,13 +244,14 @@ padding: 30px;
 }
 
 figure.ilustracao{
+  max-width: 100%;
   text-align: center;
   padding: 5px;
   align-self: center;
   background-color: #f9f5d5;
   position: relative;
   justify-content: center;
-  display: flex;
+  display: block;
   flex-direction: column;
   align-items: end;
 }
@@ -223,10 +264,10 @@ figure.ilustracao img.estrada{
   left: 20px;
 }
 
-.produtos{
-  padding: 30px;
-  width: 600px;
-  
+@media(max-width: 700px){
+  figure.ilustracao{
+    display: none;
+  }
 }
 
 /* .branco{
@@ -241,14 +282,52 @@ figure.ilustracao img.estrada{
   align-content: left;
 }
 
+@media(max-width: 700px){
+  .produto{
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.produtos{
+  padding: 30px;
+  width: 600px;
+}
+
+@media(max-width: 700px){
+  .produtos{
+    width: 85%;
+    height: auto;
+  }
+}
+
 div.produto{
   border-left: 5px solid #10162f;
   margin: 5px 0;
 }
 
+@media(max-width: 700px){
+  div.produto{
+    border-left: none;
+    margin: 20px 10px;
+    border: 1px solid #10162f23;
+    box-shadow: #10162f 0px 0px 1px;
+  }
+}
+
 .produto img.fotoProduto{
   float: left;
   align-self: center;
+}
+
+@media(max-width: 700px){
+  .produto img.fotoProduto{
+    float: none;
+    align-self: center;
+    width: 100%;
+    height: auto;
+  }
 }
 
 .produto button{
@@ -263,6 +342,22 @@ div.produto{
   align-content: center;
   justify-self: center;
   margin-top: 10px;
+}
+
+@media(max-width: 700px){
+  .produto button{
+    position: relative;
+    left: 10px;
+    margin:10px;
+    margin-bottom: 20px;
+    padding: auto;
+    width: 280px;
+    height: 60px;
+    font-size: 0.5rem;
+    align-self: center;
+    align-content: center;
+    justify-self: center;
+  }
 }
 
 .produto button:hover{
@@ -281,11 +376,18 @@ div.produto{
   transition: 0.6s;
 }
 
+
 .produto button a{
   color: #10162f;
   font-size: 00.625rem;
   padding-left: 11px;
   position: relative;
+}
+
+@media(max-width: 700px){
+  .produto button a{
+    font-size: 1rem;
+  }
 }
 
 .produto button a:hover{
@@ -296,6 +398,14 @@ div.produto{
   text-transform: uppercase;
 }
 
+@media(max-width: 700px){
+  .produto button a:hover{
+    font-size: 0.8rem;
+    align-self: center;
+    align-items: center;
+    text-align: center;
+  }
+}
 
 .produto button a img.cart{
   display: flex;
@@ -304,11 +414,18 @@ div.produto{
   left: -10px;
 }
 
+@media(max-width: 700px){
+  .produto button a img.cart{
+    display: none;
+  }
+}
+
 .produto.precoIcons{
   display: grid;
   grid-template-rows: 1fr 1fr;
   gap: 10px;
 }
+
 
 div .preco{
   display: flex;
@@ -317,11 +434,26 @@ div .preco{
   margin: 20px 0;
 }
 
+@media(max-width: 700px){
+  div .preco h3{
+    margin-left: 19px;
+    font-size: 1.3rem;
+  }
+}
+
 
 div.preco img.ic{
   position: relative;
   left: 120px;
   justify-items: end;
+}
+
+@media(max-width: 700px){
+  div.preco img.ic{
+    position: relative;
+    right: 0;
+    justify-items: end;
+  }
 }
 
 div.produto h2{
@@ -337,6 +469,25 @@ div.produto p{
   padding: auto;
 }
 
+@media(max-width: 700px){
+  div.produto h2{
+    font-size: 1.5rem;
+    letter-spacing: -3%;
+    padding: auto;
+    margin-bottom: 10px;
+    margin-left: 18px;
+  }
+  
+  div.produto p{
+    font-size: 1rem;
+    letter-spacing: 3%;
+    line-height: 1.6;
+    padding: auto;
+    margin-left: 19px;
+    margin-right: 20px;
+  }
+}
+
 /* .produto:nth-child(odd){
   background-color: #fffae56e;
   border-radius: 1px;
@@ -347,7 +498,17 @@ div.produto p{
   background-color: #b4ac8c54;
   border-left: #10162f 10px solid;
   border-radius: 2px;
-  width: 103%;
+  width: 100%;
+}
+
+@media(max-width: 700px){
+  .produto:hover{
+    padding: 20px;
+    background-color: #b4ac8c54;
+    border-left: #10162f 2px solid;
+    border-radius: 2px;
+    width: 90%;
+  }
 }
 
 footer{
@@ -387,4 +548,22 @@ footer a{
   text-decoration: none;
   font-family: 'Fira Sans', sans-serif;
   font-weight: regular;
+}
+
+@media(max-width: 700px){
+  footer{
+    padding: 30px 0;
+    margin: 0 20px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  footer p, h3{
+    margin: 10 0;
+  }
+
+  footer h3{
+    letter-spacing: 3%;
+  }
 }
